@@ -15,7 +15,6 @@ variable "environment" {
 # Azure Resource Group Name 
 variable "resource_group_name" {
   description = "Resource Group Name"
-  type = string
   default = "rg-default"  
 }
 
