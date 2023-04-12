@@ -1,32 +1,34 @@
 # Virtual Network, Subnets and Subnet NSG's
 
-## Virtual Network
+## Virtual Network 
 variable "vnet_name" {
-  description = "Virtual Network name"
+  description = "Virtual Network Name"
   type = string
   default = "vnet-default"
+  
 }
+
+# Virtual Network Address space
 variable "vnet_address_space" {
-  description = "Virtual Network address_space"
+  description = "Virtual Network Address Space"
   type = list(string)
   default = ["10.0.0.0/16"]
+  
 }
-
-
 # Web Subnet Name
 variable "web_subnet_name" {
   description = "Virtual Network Web Subnet Name"
   type = string
   default = "websubnet"
+  
 }
 # Web Subnet Address Space
 variable "web_subnet_address" {
-  description = "Virtual Network Web Subnet Address Spaces"
-  type = list(string)
-  default = ["10.0.1.0/24"]
+  description = "Virtual Network Web Subnet Address Space"
+  type = lsit(string)
+  default = ["10.0.0.1/24"]
+  
 }
-
-
 # App Subnet Name
 variable "app_subnet_name" {
   description = "Virtual Network App Subnet Name"

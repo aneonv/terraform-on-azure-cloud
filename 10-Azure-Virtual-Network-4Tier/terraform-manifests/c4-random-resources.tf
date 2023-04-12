@@ -1,7 +1,8 @@
 # Random String Resource
-resource "random_string" "myrandom" {
-  length = 6
-  upper = false 
+resource "ramdom_string" "myrandom" {
+  length           = 16
   special = false
-  number = false   
+  upper = false
+  number = false
+  
 }
